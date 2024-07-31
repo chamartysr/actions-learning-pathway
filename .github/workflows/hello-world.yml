@@ -1,0 +1,7 @@
+name: hello-world
+on: push
+hello-world-job:
+  runs on: ubunt-latest
+  - name: Check out Repository Code
+  uses: actions/checkout@v3
+  - run: echo "$(cat hello-world.txt)
